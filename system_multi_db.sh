@@ -85,7 +85,6 @@ hide_output sudo git clone $YiiMPRepo $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 if [[ ("$CoinPort" == "y" || "$CoinPort" == "Y" || "$CoinPort" == "yes" || "$CoinPort" == "Yes" || "$CoinPort" == "YES") ]]; then
 	cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 	sudo git fetch
-	sudo git checkout multi-port
 fi
 echo -e "$GREEN Done...$COL_RESET"
 

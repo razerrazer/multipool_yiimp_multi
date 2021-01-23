@@ -46,7 +46,7 @@ echo -e "$GREEN DB users and passwords can be found in $STORAGE_ROOT/yiimp/.my.c
 
 cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp/sql
 # import sql dump
-sudo zcat 2019-11-10-yiimp.sql.gz | sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName}
+sudo zcat 2020-11-10-yaamp.sql.gz | sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName}
 sudo mysql -u root -p"${DBRootPassword}" ${YiiMPDBName} --force < 2018-09-22-workers.sql
 sudo sed -i '/max_connections/c\max_connections         = 800' /etc/mysql/my.cnf
 sudo sed -i '/thread_cache_size/c\thread_cache_size       = 512' /etc/mysql/my.cnf
